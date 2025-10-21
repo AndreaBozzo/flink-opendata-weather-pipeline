@@ -38,9 +38,9 @@ Open-Meteo API → Kafka Producer → Kafka (weather_raw)
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.9 or higher (required for PyFlink 1.20+)
 - Docker and Docker Compose
-- Poetry (for dependency management)
+- Poetry (for dependency management) or pip
 
 ## Installation
 
