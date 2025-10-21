@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "opendata-weather-pipeline"
+version = "0.1.0"
+description = "A data pipeline for processing open weather data using Apache Flink & Kafka."
+authors = ["Andrea Bozzo <andreabozzo92@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+kafka-python = "^2.0.2"
+apache-flink = "^1.2.0"
+pydantic = "^1.8.2"
+numpy = "^1.20.3"
+pandas = "^1.2.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.4"
+black = "^21.9b0"
+flake8 = "^3.9.2"
+mypy = "^0.910"
+isort = "^5.9.3"
+pre-commit = "^2.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+
+[package]
+include = ["README.md", "pyproject.toml"]
+exclude = ["tests/*"]
+
