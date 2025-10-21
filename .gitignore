@@ -60,5 +60,10 @@ htmlcov/
 # Docker
 docker-compose.override.yml
 
+# Flink temporary files
+/tmp/flink-*
+*.tmp
+flink-web-upload/
+
 # OS
 Thumbs.db
